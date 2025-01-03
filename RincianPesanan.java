@@ -1,5 +1,7 @@
+import java.util.Scanner;
 public class RincianPesanan {
     public void lihatRincian(String nama, String nomor, String ktp, int pilihanKamar, int pilihanLantai, int pilihanPaket) {
+        Scanner in = new Scanner(System.in);
         int totalHarga = Base.hargaKamar[pilihanKamar - 1] + ((pilihanLantai - 1) * 20000);
         System.out.println("--------------------------");
         System.out.println("------Rincian Pemesanan------");
@@ -10,6 +12,9 @@ public class RincianPesanan {
         System.out.println("Lantai : " + Base.lantai[pilihanLantai - 1]);
         System.out.println("Paket : " + Base.paket[pilihanPaket - 1]);
         System.out.println("Harga Total: Rp." + totalHarga);
-        System.out.println("--------------------------");
+        System.out.println("--------------------------\n");
+
+        System.out.println("Tekan enter untuk kembali ke menu utama");
+        in.nextLine();
     }
 }
