@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class RincianPesanan {
     public void lihatRincian(String nama, String nomor, String ktp, int pilihanKamar, int pilihanLantai, int pilihanPaket) {
         Scanner in = new Scanner(System.in);
-        int totalHarga = Base.hargaKamar[pilihanKamar - 1] + ((pilihanLantai - 1) * 20000);
+        int totalHarga = Base.hargaKamar[pilihanKamar - 1] + Base.hargaPaket[pilihanPaket - 1];
         System.out.println("--------------------------");
         System.out.println("------Rincian Pemesanan------");
         System.out.println("Nama : " + nama);

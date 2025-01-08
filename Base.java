@@ -5,6 +5,7 @@ public class Base {
     public static int[] hargaKamar = {500000,700000,1000000};
     public static int[] lantai = {1,2,3,4,5};
     public static String[] paket = {"Weeding Rp. 20.000.000","Pijat Refleksi Rp. 600.000","Ulang Tahun Rp. 5.000.000","Skip paket" };
+    public static int[] hargaPaket = {20000000,600000,5000000, 0};
     public static String namaUser, nomorUser, ktpUser;
     public static int pilihan1 = 0, pilihan2 = 0, pilihan3 = 0;
 
