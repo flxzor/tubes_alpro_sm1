@@ -48,8 +48,7 @@ public class Pilihan {
             if (pilihan >= 1 && pilihan <= Base.paket.length) {
                 break;
             } else {
-                pilihan = Base.paket.length;
-                break;
+                System.out.println("Pilihan tidak valid. Silakan pilih angka antara 1 dan " + Base.paket.length);
             }
         }
         return pilihan;
